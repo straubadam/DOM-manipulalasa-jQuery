@@ -1,13 +1,11 @@
 let tomb = ['adam', 'janos', 'pal', 'erno'];
-let i = 0;
 
-function adjHozzaEgyLit() {
-    $(".simafelsorol:last-of-type").append("<li>", tomb, "</li>");
+function adjHozzaEgyLit(elem) {
+    $(".simafelsorol:last-of-type").append("<li>" + elem + "</li>");
     
-
     }
 
-tomb.forEach(adjHozzaEgyLit)
+    tomb.forEach(adjHozzaEgyLit)
 
 
 let additionalBlock = {
